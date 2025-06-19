@@ -10,6 +10,7 @@ services:
       DB_NAME: moodle
       DB_USER: moodle
       DB_PASS: moodle
+      DB_PORT: 3306
       DB_PREFIX: mdl_
       DEBUG: "true"
       MOODLE_EMAIL: ${TEST_USER_EMAIL}
