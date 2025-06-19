@@ -18,7 +18,7 @@
  * Capabilities for the SCORM content type.
  *
  * @package    contenttype_scorm
- * @copyright  2025 YOUR NAME
+ * @copyright  2025 Área de Tecnología Educativa <ate.educacion@gobiernodecanarias.org>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
