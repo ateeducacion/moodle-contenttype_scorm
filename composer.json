@@ -1,0 +1,8 @@
+{
+    "name": "moodle/contenttype-scorm",
+    "type": "moodle-plugin",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=7.4"
+    }
+}
