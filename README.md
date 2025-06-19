@@ -59,3 +59,4 @@ This repository includes a `docker-compose.yml` and `Makefile` to help run Moodl
 with this plugin in a containerized environment. Copy `.env.dist` to `.env` and
 adjust the values if needed. Then use `make up` to start the containers or
 `make shell` to open a shell inside the Moodle container.
+The plugin folder from the host is mounted inside the Moodle container for easier debugging.
