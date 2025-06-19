@@ -49,6 +49,33 @@ class contenttype extends base_contenttype {
     }
 
     /**
+     * Returns features implemented by this content type.
+     *
+     * @return array
+     */
+    public static function get_implemented_features(): array {
+        return [];
+    }
+
+    /**
+     * Allowed file extensions that can be managed.
+     *
+     * @return array
+     */
+    public static function get_manageable_extensions(): array {
+        return ['zip'];
+    }
+
+    /**
+     * Returns the list of content type identifiers provided by this plugin.
+     *
+     * @return array
+     */
+    public static function get_contenttype_types(): array {
+        return [self::TYPE];
+    }
+
+    /**
      * Uploads a SCORM package into the content bank.
      *
      * @param stdClass $record content record data
