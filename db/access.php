@@ -32,6 +32,15 @@ $capabilities = [
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW,
         ],
+        'clonepermissionsfrom' => 'moodle/contentbank:upload',
+    ],
+    'contenttype/scorm:access' => [
+        'captype' => 'read',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'archetypes' => [
+            'editingteacher' => CAP_ALLOW,
+            'manager' => CAP_ALLOW,
+        ],
         'clonepermissionsfrom' => 'moodle/contentbank:access',
     ],
 ];

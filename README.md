@@ -9,6 +9,10 @@ This is a Moodle plugin that adds support for SCORM packages in the Content Bank
 - Reuse SCORM content across different courses.
 - Easy integration into Moodle's native contentbank UI.
 
+## Accepted file types
+
+The plugin allows uploading SCORM packages in `.zip` format. Other file types, such as `.h5p`, are not supported.
+
 ## Installation
 
 1. Clone this repository into the `contentbank/contenttype/` directory of your Moodle installation:
@@ -41,7 +45,8 @@ moodle/contentbank/contenttype/scorm/
 
 The plugin defines its own capabilities:
 
-* `contenttype/scorm:addinstance` — controls who can upload SCORM packages to the content bank.
+* `contenttype/scorm:addinstance` — controls who can upload SCORM packages to the Content Bank.
+* `contenttype/scorm:access` — grants access to the SCORM content type in the Content Bank.
 
 ## Requirements
 
