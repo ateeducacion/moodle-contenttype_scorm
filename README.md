@@ -11,10 +11,10 @@ This is a Moodle plugin that adds support for SCORM packages in the Content Bank
 
 ## Installation
 
-1. Clone this repository into the `contentbank/` directory of your Moodle installation:
+1. Clone this repository into the `contentbank/contenttype/` directory of your Moodle installation:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/moodle-contenttype_scorm.git scorm
+    git clone https://github.com/YOUR_USERNAME/moodle-contenttype_scorm.git scorm
    ```
 
 2. Visit your Moodle site as an admin to complete the plugin installation.
@@ -24,7 +24,7 @@ This is a Moodle plugin that adds support for SCORM packages in the Content Bank
 ## Directory structure
 
 ```
-moodle/contentbank/scorm/
+moodle/contentbank/contenttype/scorm/
 ├── classes/
 │   ├── contenttype.php
 │   └── content.php

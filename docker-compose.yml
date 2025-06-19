@@ -28,7 +28,7 @@ services:
       - mariadb
     volumes:
       - moodledata:/var/moodledata
-      - .:/var/www/html/contentbank/scorm
+      - .:/var/www/html/contentbank/contenttype/scorm
   mariadb:
     image: mariadb:10.11
     ports:
