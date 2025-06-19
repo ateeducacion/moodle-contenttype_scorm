@@ -58,5 +58,6 @@ GNU GPL v3 or later
 This repository includes a `docker-compose.yml` and `Makefile` to help run Moodle
 with this plugin in a containerized environment. Copy `.env.dist` to `.env` and
 adjust the values if needed. Then use `make up` to start the containers or
-`make shell` to open a shell inside the Moodle container.
-The plugin folder from the host is mounted inside the Moodle container for easier debugging.
+`make shell` to open a shell inside the Moodle container. The setup uses
+MariaDB 10.11, which meets Moodle 5.0 database requirements. The plugin folder
+from the host is mounted inside the Moodle container for easier debugging.

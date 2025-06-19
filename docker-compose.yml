@@ -30,7 +30,9 @@ services:
       - moodledata:/var/moodledata
       - .:/var/www/html/contentbank/scorm
   mariadb:
-    image: mariadb:10.6
+    image: mariadb:10.11
+    ports:
+      - 3306:3306
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: moodle

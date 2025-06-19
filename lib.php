@@ -18,7 +18,7 @@
  * Library functions for the SCORM content type plugin.
  *
  * @package    contenttype_scorm
- * @copyright  2024 YOUR NAME
+ * @copyright  2025 YOUR NAME
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
