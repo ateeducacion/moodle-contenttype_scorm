@@ -26,6 +26,7 @@ namespace contenttype_scorm;
 
 use core_contentbank\content as base_content;
 use moodle_url;
+use stored_file;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -40,6 +41,19 @@ class content extends base_content {
      */
     public function get_view_url(): moodle_url {
         return new moodle_url('/contentbank/scorm/view.php', ['id' => $this->get_id()]);
+    }
+
+    /**
+     * Returns the stored file associated with this content.
+     *
+     * @return stored_file|null
+     */
+    public function get_file(): ?stored_file {
+        $fs = get_file_storage();
+        $files = $fs->get_area_files($this->get_contextid(), 'contentbank', contenttype::TYPE,
+            $this->get_id(), '/', false);
+
+        return reset($files) ?: null;
     }
 }
 

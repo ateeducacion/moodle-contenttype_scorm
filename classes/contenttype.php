@@ -59,10 +59,12 @@ class contenttype extends base_contenttype {
         global $USER;
 
         if ($file->get_mimetype() !== 'application/zip') {
-            throw new moodle_exception('error');
+            throw new moodle_exception('invalidfiletype');
         }
 
         $record->contenttype = self::TYPE;
+        $record->contextid = $this->context->id;
+        $record->name = $file->get_filename();
         $record->usercreated = $USER->id;
         $record->timecreated = time();
 
