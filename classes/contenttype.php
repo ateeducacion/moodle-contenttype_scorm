@@ -53,7 +53,7 @@ class contenttype extends base_contenttype {
      *
      * @return array
      */
-    public static function get_implemented_features(): array {
+    public function get_implemented_features(): array {
         return [];
     }
 
@@ -62,7 +62,7 @@ class contenttype extends base_contenttype {
      *
      * @return array
      */
-    public static function get_manageable_extensions(): array {
+    public function get_manageable_extensions(): array {
         return ['zip'];
     }
 
@@ -71,7 +71,7 @@ class contenttype extends base_contenttype {
      *
      * @return array
      */
-    public static function get_contenttype_types(): array {
+    public function get_contenttype_types(): array {
         return [self::TYPE];
     }
 
