@@ -1,0 +1,14 @@
+# Ignore local environment files
+.env
+
+# Ignore Moodle configuration file if copied here
+config.php
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore PHPUnit cache
+.phpunit.result.cache
+
+# Ignore log files
+*.log
