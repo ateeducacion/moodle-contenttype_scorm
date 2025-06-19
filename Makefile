@@ -1,4 +1,5 @@
 ENV_FILE ?= .env
+PLUGIN = contenttype_scorm
 
 check-env:
 	@if [ ! -f $(ENV_FILE) ]; then \
@@ -37,3 +38,12 @@ shell: check-docker check-env
 # Clean environment
 clean: check-docker check-env
 	docker compose down -v --remove-orphans
+
+
+# Create release package
+package:
+	@if [ -z "$(VERSION)" ]; then \
+	echo "VERSION variable is required"; \
+	exit 1; \
+	fi
+	composer archive --format=zip --file=$(PLUGIN)-$(VERSION)

@@ -61,3 +61,13 @@ adjust the values if needed. Then use `make up` to start the containers or
 `make shell` to open a shell inside the Moodle container. The setup uses
 MariaDB 10.11, which meets Moodle 5.0 database requirements. The plugin folder
 from the host is mounted inside the Moodle container for easier debugging.
+
+## Packaging the plugin
+
+To create a release ZIP archive, use:
+
+```bash
+make package VERSION=1.0
+```
+
+The `.gitattributes` file ensures development files are excluded from the archive. This archive is also generated automatically when publishing a GitHub release via the included workflow.

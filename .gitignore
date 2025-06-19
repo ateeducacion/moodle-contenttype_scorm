@@ -12,3 +12,12 @@ config.php
 
 # Ignore log files
 *.log
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore editor swap files and other temp files
+*~
+*.swp
+.idea/
+.vscode/
