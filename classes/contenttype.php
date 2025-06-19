@@ -55,11 +55,15 @@ class contenttype extends base_contenttype {
      * @param stored_file $file uploaded file
      * @return content
      */
-    public function upload_content(stdClass $record, stored_file $file): content {
+    public function upload_content(stored_file $file, ?stdClass $record = null): content {
         global $USER;
 
         if ($file->get_mimetype() !== 'application/zip') {
             throw new moodle_exception('invalidfiletype');
+        }
+
+        if ($record === null) {
+            $record = new stdClass();
         }
 
         $record->contenttype = self::TYPE;
